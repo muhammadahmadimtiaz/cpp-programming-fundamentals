@@ -3,69 +3,33 @@
 Practice programs from **Programming Fundamentals and Problem Solving**,
 BS Computer Science, Quaid-i-Azam University, Islamabad (2026-2030).
 
-Each program takes input from the user, performs calculations, and prints the result.
-I'm using them to practice variables, input/output, arithmetic expressions, and turning a
-real-world word problem into a step-by-step solution.
+I'm solving small problems in C++ to build strong fundamentals. Each folder has its own
+README describing every program in it.
 
-## Programs
+## Contents
 
-All programs are in [`01-basics`](./01-basics).
-
-| # | File | What it does |
-|---|------|--------------|
-| 1 | `gift_budget.cpp` | Takes monthly income and a yearly gift percentage, then calculates how much can be spent on gifts in a year. |
-| 2 | `vacation_petrol_cost.cpp` | Calculates the petrol cost of a trip to a vacation home, one way and round trip, from distance, petrol price and fuel average. |
-| 3 | `paper_reams_calculator.cpp` | Works out how many reams of paper are needed to print a report for everyone at a meeting plus extra copies (rounds up with `ceil`). |
-| 4 | `perpendicular_bisector.cpp` | Takes two points and prints the equation of the perpendicular bisector of the line joining them (slope, midpoint, y-intercept). |
-| 5 | `stock_profit_calculator.cpp` | Calculates the cost of buying shares, the sale amount, both broker commissions, and the net difference between selling and buying. |
-| 6 | `paint_job_estimator.cpp` | Estimates gallons of paint, labor hours, and the total cost of painting a wall of a given area. |
-| 7 | `freezer_temperature.cpp` | Converts time since a power failure (HH MM) into hours and calculates the freezer temperature using a given formula. |
-| 8 | `final_exam_score_needed.cpp` | Calculates the score needed on the final exam to reach a minimum course average, given the current average and the final's weight. |
-| 9 | `cookie_recipe_adjuster.cpp` | Scales the sugar, butter and flour in a recipe up or down for the number of cookies you want to make. |
-| 10 | `cookie_calorie_counter.cpp` | Calculates calories consumed from the number of cookies eaten, using cookies per bag, servings per bag and calories per serving. |
-
-## Concepts practiced
-- Variables and data types (`int`, `float`)
-- Input and output with `cin` and `cout`
-- Arithmetic expressions and operator precedence
-- Compound assignment operators (`*=`)
-- `ceil()` from `<cmath>` for rounding up
-- Breaking a word problem into steps: inputs, formulas, outputs
-
-## Example run
-
-`freezer_temperature.cpp`:
-```
-Enter the time elapsed since power failure in this format HH [space] MM: 2 30
-Temperature in Freezer is: -14.4444°C
-```
-
-`gift_budget.cpp`:
-```
-Enter your monthly income: 50000
-Enter the percentage you want to spend on presents yearly: 10
-
-You can Spend 60000 on gifts in a year.
-```
+| Folder                           | Topic                                                 | Programs |
+| -------------------------------- | ----------------------------------------------------- | -------- |
+| [01-basics](./01-basics)         | Input/output, variables, arithmetic, escape sequences | 11       |
+| [02-conditions](./02-conditions) | `if` / `else if` / `else`                             | 1        |
 
 ## How to run
-```bash
-g++ gift_budget.cpp -o gift_budget
-./gift_budget
-```
-On Windows, run `gift_budget.exe` instead of `./gift_budget`.
 
-## Known limitations (things I want to improve)
-- No input validation yet (for example, division by zero in `perpendicular_bisector.cpp` when both points have the same x or y value).
-- Counts such as people or cookies use `float`, which should be `int` where the value is always whole.
-- Output formatting (decimal places, units) is basic. I plan to use `<iomanip>` later.
+```bash
+g++ filename.cpp -o program
+./program
+```
+
+On Windows, run `program.exe`.
 
 ## Roadmap
+
 - [x] Basics: input/output, variables, arithmetic
-- [ ] Conditions (if/else, switch)
+- [ ] Conditions (if/else, switch): in progress
 - [ ] Loops
 - [ ] Functions
 - [ ] Arrays
 
 ## Author
+
 Muhammad Ahmad | [LinkedIn](https://www.linkedin.com/in/muhammadahmadimtiaz)
